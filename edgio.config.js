@@ -6,6 +6,9 @@ module.exports = {
     {
       name: 'origin',
       override_host_header: 'publicdomainreview.org',
+      tls_verify: {
+      sni_hint_and_strict_san_check: "publicdomainreview.org",
+      use_sni: true },
       hosts: [
         {
           location: 'publicdomainreview.org',
